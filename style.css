@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@font-face {
+  font-family: "n1";
+  src: url("font/Lobster-Regular.ttf");}
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: n1;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  .body{
+    height: 100vh;
+    background: url(png/tło.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-card{
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .card-header{
+    background: #1E2E3F;
+    padding: 60px 40px;
+  }
+  
+  .pic{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(360deg, #fd004c, #fe9000, #fff020, #3edf4b, #3363ff, #b102b7, #fd004c );
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+  }
+  
+  @keyframes animated-gradient{
+    25%{
+      transform: rotate(90deg);
+    
+    }
+    50%{
+      transform: rotate(180deg);
+    }
+    75%{
+      transform: rotate(270deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  .pic img{
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    animation: animated-img 2s linear infinite;
+    
+
+  }
+  @keyframes animated-img{
+    25%{
+      transform: rotate(-90deg);
+    
+    }
+    50%{
+      transform: rotate(-180deg);
+    }
+    75%{
+      transform: rotate(-270deg);
+    }
+    100%{
+      transform: rotate(-360deg);
+    }
+  }
+  .pic img:hover{
+    transform: rotate(360deg);
+  }
+
+  .name{
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  .desc{
+    font-size: 18px;
+    color: white;
+  }
+  
+  .sm{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .sm a{
+    color: #f2f2f2;
+    width: 56px;
+    font-size: 15px;
+    transition: .3s linear;
+  }
+  
+  .sm a:hover{
+    color: #e66767;
+  }
+  .footer{
+    color: #00FFFF;
+  }
+.fa-facebook-square:hover{
+  color: #2d88ff;
+}
